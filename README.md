@@ -1,5 +1,7 @@
 # RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2025 Assignment/PS 2)
 
+:red[**Note: For readibility purposes, I reference SRR25630304 as 'rhy49' and SRR25630399 as 'rhy106' in code, plots, and tables.**]
+
 ## Overall assignment:
 
 In this assignment, you will process electric organ and/or skeletal muscle RNA-seq reads for a future differential gene expression analysis. We will be completing the differential gene expression analysis in our last bioinformatics assignment of this class. You will learn how to use existing tools for quality assessment and read trimming, compare quality assessments to those created by your own software, and how to align and count reads. Additionally, you will learn how to summarize important information in a high-level report. You should create a cohesive, [well written](https://drive.google.com/drive/u/0/folders/1GorpwubavrvhUtK18PZ7LURXcz0hf0bK) report for your "PI" about what you've learned about/from your data.

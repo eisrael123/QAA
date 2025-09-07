@@ -24,9 +24,9 @@ out4="/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchoph
 R1adapter="AGATCGGAAGAGCACACGTCTGAACTCCAGTCA"
 R2adapter="AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT"
 
-echo "trimmer #1 is running."
-/usr/bin/time -v cutadapt -a $R1adapter -A $R2adapter -o $out1 -p $out2 $f1 $f2
-echo "trimmer #1 is complete."
+# echo "trimmer #1 is running."
+# /usr/bin/time -v cutadapt -a $R1adapter -A $R2adapter -o $out1 -p $out2 $f1 $f2
+# echo "trimmer #1 is complete."
 
 echo "trimmer #2 is running."
 /usr/bin/time -v cutadapt -a $R1adapter -A $R2adapter -o $out3 -p $out4 $f3 $f4

@@ -1,0 +1,46 @@
+	Command being timed: "STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz --genomeDir /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_compressirostris.STAR_2.7.11b --outFileNamePrefix align_results_rhy49/"
+	User time (seconds): 5423.94
+	System time (seconds): 20.67
+	Percent of CPU this job got: 757%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:01.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10255960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 783007
+	Voluntary context switches: 402851
+	Involuntary context switches: 15384
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0	
+	Command being timed: "STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz --genomeDir /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_compressirostris.STAR_2.7.11b --outFileNamePrefix align_results_rhy106/"
+	User time (seconds): 5421.97
+	System time (seconds): 20.67
+	Percent of CPU this job got: 757%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:58.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10255960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 783007
+	Voluntary context switches: 402851
+	Involuntary context switches: 15384
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

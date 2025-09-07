@@ -1,0 +1,6 @@
+Counts for /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/deduplicated_results_rhy49/deduplicated.sam
+Mapped reads = 28028911
+Unmapped reads = 3771295
+Counts for /projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/deduplicated_results_rhy106/deduplicated.sam
+Mapped reads = 39312727
+Unmapped reads = 4670164

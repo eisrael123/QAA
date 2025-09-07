@@ -33,5 +33,5 @@ trimmomaticjarfile="/home/ewi/miniforge3/envs/QAA/share/trimmomatic-0.40-0/trimm
 # echo "trimmer #1 is complete."
 
 echo "trimmer #2 is running."
-/usr/bin/time -v java -jar $trimmomaticjarfile PE -phred33 $f3 $f4 $out3_paired $out3unpaired $out4_paired $out4_unpaired LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+/usr/bin/time -v java -jar $trimmomaticjarfile PE -phred33 $f3 $f4 $out3_paired $out3_unpaired $out4_paired $out4_unpaired LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
 echo "trimmer #2 is complete."
