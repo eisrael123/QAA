@@ -28,8 +28,8 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for Read 1')
-    plt.savefig("r1.png")
+    plt.title('Distribution of Quality Scores for Rhy49 R1')
+    plt.savefig("Rhy49_R1.png")
     plt.close()
 
     #R2
@@ -41,8 +41,8 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for Read 2')
-    plt.savefig("r2.png")
+    plt.title('Distribution of Quality Scores for Rhy49 R2')
+    plt.savefig("Rhy49_R2.png")
     plt.close()
 
     #R3
@@ -54,8 +54,8 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for Read 3')
-    plt.savefig("r3.png")
+    plt.title('Distribution of Quality Scores for Rhy106 R1')
+    plt.savefig("Rhy106_R1.png")
     plt.close()
 
     #R4
@@ -67,6 +67,6 @@ with open(output, 'r') as f:
     plt.grid(axis='y',linestyle='--',alpha=0.5)
     plt.xlabel('Base Position')
     plt.ylabel('Mean')
-    plt.title('Distribution of Quality Scores for Read 4')
-    plt.savefig("r4.png")
+    plt.title('Distribution of Quality Scores for Rhy106 R2')
+    plt.savefig("Rhy106_R2.png")
     plt.close()

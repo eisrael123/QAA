@@ -10,54 +10,54 @@ def dict_to_data_list(d):
         data.extend([value] * frequency)
     return np.array(data)
 
-## TO INITIALIZE DATA
+# TO INITIALIZE DATA
 
-# fileR1 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz"
-# fileR2 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz"
-# fileR3 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz"
-# fileR4 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz"
+fileR1 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz"
+fileR2 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy49_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz"
+fileR3 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r1_ADAPTER_REMOVED_paired.fastq.gz"
+fileR4 = "/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/r2_ADAPTER_REMOVED_paired.fastq.gz"
 
-# dist_rhy49_R1 = {i: 0 for i in range(151)} #max length
-# dist_rhy49_R2 = {i: 0 for i in range(151)}
-# dist_rhy106_R1 = {i: 0 for i in range(151)}
-# dist_rhy106_R2 = {i: 0 for i in range(151)}
-# with (
-#     gzip.open(fileR1,"rt") as r1, 
-#     gzip.open(fileR2,"rt") as r2, 
-#     gzip.open(fileR3,"rt") as r3, 
-#     gzip.open(fileR4,"rt") as r4, 
-# ):
-#     index = 1
-#     while True:     
-#         read1 = r1.readline().strip()
-#         read2 = r2.readline().strip()
-#         if read1 == '' or read2 == '':
-#             break
-#         if index%4 == 2:
-#             dist_rhy49_R1[len(read1)] += 1
-#             dist_rhy49_R2[len(read2)] += 1
-#         index += 1
+dist_rhy49_R1 = {i: 0 for i in range(151)} #max length
+dist_rhy49_R2 = {i: 0 for i in range(151)}
+dist_rhy106_R1 = {i: 0 for i in range(151)}
+dist_rhy106_R2 = {i: 0 for i in range(151)}
+with (
+    gzip.open(fileR1,"rt") as r1, 
+    gzip.open(fileR2,"rt") as r2, 
+    gzip.open(fileR3,"rt") as r3, 
+    gzip.open(fileR4,"rt") as r4, 
+):
+    index = 1
+    while True:     
+        read1 = r1.readline().strip()
+        read2 = r2.readline().strip()
+        if read1 == '' or read2 == '':
+            break
+        if index%4 == 2:
+            dist_rhy49_R1[len(read1)] += 1
+            dist_rhy49_R2[len(read2)] += 1
+        index += 1
     
-#     index = 1
-#     while True:     
-#         read1 = r3.readline().strip()
-#         read2 = r4.readline().strip()
-#         if read1 == '' or read2 == '':
-#             break
-#         if index%4 == 2:
-#             dist_rhy106_R1[len(read1)] += 1
-#             dist_rhy106_R2[len(read2)] += 1
-#         index += 1
+    index = 1
+    while True:     
+        read1 = r3.readline().strip()
+        read2 = r4.readline().strip()
+        if read1 == '' or read2 == '':
+            break
+        if index%4 == 2:
+            dist_rhy106_R1[len(read1)] += 1
+            dist_rhy106_R2[len(read2)] += 1
+        index += 1
 
-# with open("trimmed_distributions.txt", 'w') as f:
-#     f.write(f"{dist_rhy49_R1}\n{dist_rhy49_R2}\n{dist_rhy106_R1}\n{dist_rhy106_R2}")
+with open("trimmed_distributions.txt", 'w') as f:
+    f.write(f"{dist_rhy49_R1}\n{dist_rhy49_R2}\n{dist_rhy106_R1}\n{dist_rhy106_R2}")
 
 ## TO RETRIEVE DATA
-with open('/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/trimmed_distributions.txt', 'r') as f:
-    dist_rhy49_R1 = eval(f.readline().strip())
-    dist_rhy49_R2 = eval(f.readline().strip())
-    dist_rhy106_R1 = eval(f.readline().strip())
-    dist_rhy106_R2 = eval(f.readline().strip())
+# with open('/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/trimmed_distributions.txt', 'r') as f:
+#     dist_rhy49_R1 = eval(f.readline().strip())
+#     dist_rhy49_R2 = eval(f.readline().strip())
+#     dist_rhy106_R1 = eval(f.readline().strip())
+#     dist_rhy106_R2 = eval(f.readline().strip())
 
 
 #convert dictionary to data list

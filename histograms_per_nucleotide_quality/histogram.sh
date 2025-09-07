@@ -16,9 +16,9 @@ f2="/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophor
 f3="/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/3.1Gb_SAMN36982003_1.fastq.gz"
 f4="/projects/bgmp/ewi/bioinfo/Bi623/Assignments/QAA/Campylomormyrus_rhynchophorus_rhy106_electric_organ_adult/3.1Gb_SAMN36982003_2.fastq.gz"
 
-echo "histogram generator p1 is running."
-/usr/bin/time -v ./histogram_generator_part1.py $f1 $f2 $f3 $f4 > processed_data_p1.txt
-echo "histogram generator p1 is complete."
+# echo "histogram generator p1 is running."
+# /usr/bin/time -v ./histogram_generator_part1.py $f1 $f2 $f3 $f4 > processed_data_p1.txt
+# echo "histogram generator p1 is complete."
 
 echo "histogram generator p2 is running."
 /usr/bin/time -v ./histogram_generator_part2.py processed_data_p1.txt
